@@ -1,0 +1,82 @@
+.elem {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.part1 {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+.part1 > div {
+  width: 47%;
+}
+.soupart1 {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.icns {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icn {
+  color: var(--second-color);
+  font-size: var(--font-h3);
+}
+.name {
+  margin-left: 3px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+}
+.soupart2 {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.soupart2 > div {
+  padding: 0 10px;
+  width: fit-content;
+  height: 28px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--ligth-second-color);
+  border: 1.5px solid var(--second-color);
+}
+.part2 {
+  width: 100%;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prce {
+  width: 100%;
+  height: 8px;
+  background-color: var(--border-color);
+  border-radius: 20px;
+}
+.prce > div {
+  height: 100%;
+  border-radius: 20px 0 0 20px;
+  background-image: linear-gradient(
+    to left,
+    var(--second-color),
+    rgba(0, 0, 0, 0.4)
+  );
+}

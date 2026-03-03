@@ -1,0 +1,123 @@
+:root {
+  --bg-color: #0b0f19;
+  --second-color: #2980b9;
+  --text-color: #fff;
+  --text-muted-color: #9ba4b5;
+  --border-color: #1a2233;
+  --navbar-color: #111827;
+  --card-color: #131c31;
+}
+.card {
+  width: 320px;
+  height: fit-content;
+  background-color: var(--card-color);
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px;
+  overflow: hidden;
+}
+.card > div {
+  width: 95%;
+}
+.card .img {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+.img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 5px 0px 0px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  object-position: center;
+  transition:
+    transform 0.5s ease,
+    0.5s ease;
+}
+.img:hover img {
+  filter: blur(10px);
+}
+.img h4 {
+  opacity: 0;
+  margin-left: 22px;
+  color: var(--text-color);
+  font-size: var(--font-h4);
+  position: absolute;
+  top: 30px;
+}
+.img p {
+  line-height: 23px;
+  opacity: 0;
+  margin-left: 30px;
+  text-align: left;
+  color: var(--text-muted-color);
+  font-size: var(--font-p);
+  max-width: 260px;
+  position: absolute;
+  top: 60px;
+}
+.card:hover .img img {
+  transform: scale(1.02);
+}
+.info {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+h4 {
+  color: var(--text-color);
+  font-size: var(--font-h4);
+}
+.tools {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.tools > div {
+  width: fit-content;
+  height: 28px;
+  padding: 0px 5px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(41, 128, 185, 0.1);
+  border: 1.5px solid rgba(41, 128, 185, 0.3);
+}
+.tools > div p {
+  color: var(--second-color);
+  font-weight: 500;
+}
+.icns {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+}
+.icns > div {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+}
+.icn {
+  font-size: var(--font-h4);
+  color: var(--text-muted-color);
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.icns > div:hover .icn {
+  color: var(--text-color);
+}
