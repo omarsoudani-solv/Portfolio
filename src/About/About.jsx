@@ -32,7 +32,7 @@ const p2 =
   "My background in low-level programming gives me a deep understanding of system fundamentals, which guides my technical decisions and attention to critical details. I believe clean architecture and readable code are the foundation of scalable, dependable digital experiences.";
 const parentvar = {
   hidden: {},
-  visible: {},
+  visible: { transition: { staggerChildren: 0.5 } },
 };
 const titlevar = {
   hidden: { opacity: 0, y: 30 },
@@ -78,6 +78,9 @@ function About() {
             <motion.h2 variants={titlevar}>
               About <span>Me</span>
             </motion.h2>
+            <motion.p variants={titlevar}>
+              Crafting High-Performance Applications through Precise Engineering
+            </motion.p>
           </motion.div>
           <div className={styles.content}>
             <div className={styles.soucontent1}>
